@@ -104,6 +104,11 @@ h3 {
   font-size: 5.6rem;
   font-weight: 400;
 
+  @media #{$mobile-width} {
+    font-size: 8rem;
+    line-height: 9.2rem;
+  }
+
   @media #{$s-desktop-width} {
     font-size: 5.6rem;
   }

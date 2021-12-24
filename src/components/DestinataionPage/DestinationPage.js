@@ -32,35 +32,17 @@ const DestinationPage = () => {
         <img
           className="dest__img  dest__img--visible"
           src={moon}
-          width="170"
-          height="170"
           alt="Moon"
           aria-label="moon"
         />
-        <img
-          className="dest__img"
-          src={mars}
-          width="170"
-          height="170"
-          alt="Mars"
-          aria-label="mars"
-        />
+        <img className="dest__img" src={mars} alt="Mars" aria-label="mars" />
         <img
           className="dest__img"
           src={europa}
-          width="170"
-          height="170"
           alt="Europa"
           aria-label="europa"
         />
-        <img
-          className="dest__img"
-          src={titan}
-          width="170"
-          height="170"
-          alt="Titan"
-          aria-label="titan"
-        />
+        <img className="dest__img" src={titan} alt="Titan" aria-label="titan" />
       </div>
       <ul className="dest__list" onClick={handleDestinationsClick}>
         <Link
