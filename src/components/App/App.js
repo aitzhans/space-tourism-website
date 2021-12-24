@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import CrewPage from "../CrewPage/CrewPage";
 import DestinationPage from "../DestinataionPage/DestinationPage";
 
@@ -24,7 +24,7 @@ import TechSpaceport from "../TechPage/TechSpaceport";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -49,7 +49,7 @@ const App = () => {
           <Route path="spaceport" element={<TechSpaceport />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
