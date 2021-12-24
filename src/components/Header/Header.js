@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <nav ref={navRef} className="header__nav">
         <ul className="header__nav-list">
-          <li className="header__nav-item">
+          <li className="header__nav-item  header__nav-item--active">
             <span className="header__nav-number">00</span>HOME
           </li>
           <li className="header__nav-item">

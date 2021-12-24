@@ -4,6 +4,8 @@
 }
 
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   padding: 0;
   /* for mobiles */
   font-size: 62.5%; /* = 1rem = 10px */
@@ -11,7 +13,7 @@ html {
 
   @media #{$mobile-width} {
     /* for tablets */
-    // font-size: 62.5%;
+    font-size: 62.5%;
     // background-color: tomato;
   }
 
@@ -28,17 +30,14 @@ html {
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   position: relative;
-  overflow: hidden;
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  font-size: 1.8rem; /* =18px */
-  line-height: 3.2rem; /* =18px */
-
+  font-size: 1.4rem; /* =14px */
   background-color: $bg-color;
-  font-family: "Barlow", sans-serif;
-  color: $secondary-text-color;
 }
 
 img {
@@ -52,45 +51,105 @@ button:focus {
   outline: none;
 }
 
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  color: $secondary-text-color;
+
+  @media #{$mobile-width} {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  @media #{$s-desktop-width} {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+}
+
 h1 {
   font-family: "Bellefair", serif;
   color: $main-text-color;
-  font-size: 15rem;
+  text-transform: uppercase;
+  font-size: 8rem;
+  line-height: 10rem;
+  font-weight: 400;
+
+  @media #{$mobile-width} {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
 }
 
 h2 {
   font-family: "Bellefair", serif;
   color: $main-text-color;
   font-size: 10rem;
+  font-weight: 400;
+
+  @media #{$s-desktop-width} {
+    font-size: 10rem;
+  }
 }
 
 h3 {
   font-family: "Bellefair", serif;
   color: $main-text-color;
   font-size: 5.6rem;
+  font-weight: 400;
+
+  @media #{$s-desktop-width} {
+    font-size: 5.6rem;
+  }
 }
 
 h4 {
   font-family: "Bellefair", serif;
   color: $main-text-color;
   font-size: 3.2rem;
+  font-weight: 400;
+
+  @media #{$s-desktop-width} {
+    font-size: 3.2rem;
+  }
 }
 
 h5 {
   font-family: "Barlow Condensed", sans-serif;
   color: $secondary-text-color;
-  font-size: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   letter-spacing: 4.75px;
+
+  @media #{$mobile-width} {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  @media #{$s-desktop-width} {
+    font-size: 2.8rem;
+  }
 }
 
 .subheading1 {
   font-family: "Bellefair", serif;
   color: $main-text-color;
   font-size: 2.8rem;
+
+  @media #{$s-desktop-width} {
+    font-size: 2.8rem;
+  }
 }
 .subheading2 {
   font-family: "Barlow Condensed", sans-serif;
   color: $main-text-color;
   font-size: 1.4rem;
+  font-weight: 400;
   letter-spacing: 2.35px;
+
+  @media #{$s-desktop-width} {
+    font-size: 1.4rem;
+  }
 }

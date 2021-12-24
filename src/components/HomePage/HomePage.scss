@@ -1,0 +1,109 @@
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;
+$dark-color: styles.$dark-color;
+$mobile-width: styles.$mobile-width;
+
+.main__container {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -8.8rem;
+
+  padding: 2.4rem;
+  padding-top: 11.2rem;
+
+  background: url("./background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  // outline: 1px pink solid;
+}
+
+.main__subheader {
+  margin: 0;
+  margin-bottom: 1.6rem;
+  // outline: 1px yellow solid;
+}
+.main__header {
+  margin: 0;
+  margin-bottom: 1.6rem;
+  // outline: 1px lightblue solid;
+}
+
+.main__text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 7.5rem;
+  // outline: 1px yellow solid;
+}
+
+.main__btn {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: $main-text-color;
+
+  font-family: "Bellefair", serif;
+  color: $bg-color;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 15rem;
+  font-weight: 400;
+
+  outline: 0.1rem solid rgba($color: $dark-color, $alpha: 0);
+  transition: outline 0.3s;
+
+  &:hover,
+  &:active {
+    outline: 4.5rem solid rgba($color: $dark-color, $alpha: 0.4);
+  }
+}
+
+@media #{$mobile-width} {
+  .main__container {
+    margin-top: -14.5rem;
+    min-height: 100vh;
+
+    padding: 15rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    background: url("./background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: auto;
+    background-position: center bottom;
+    // outline: 1px lightblue solid;
+  }
+
+  .main__subheader {
+    padding-top: 20rem;
+    margin-bottom: 2.4rem;
+  }
+  .main__header {
+    margin-bottom: 2.4rem;
+    // outline: 1px lightblue solid;
+  }
+
+  .main__text {
+    width: 45rem;
+    margin-bottom: 15rem;
+    // outline: 1px yellow solid;
+  }
+
+  .main__btn {
+    height: 24rem;
+    width: 24rem;
+
+    font-size: 3.2rem;
+    line-height: 24rem;
+    // outline: 1px yellow solid;
+  }
+}
