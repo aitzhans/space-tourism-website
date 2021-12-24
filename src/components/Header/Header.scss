@@ -87,15 +87,20 @@ $s-desktop-width: styles.$s-desktop-width;
 
 .header__nav-list {
   list-style: none;
+
+  display: flex;
+  flex-direction: column;
   // outline: 1px yellow solid;
 }
 
 .header__nav-item {
   // outline: 1px yellow solid;
   margin: 0;
-  padding: 0;
-  margin-bottom: 3.2rem;
+  position: relative;
+  padding: 1.6rem 0;
+  // margin-bottom: 3.2rem;
 
+  text-decoration: none;
   font-family: "Barlow Condensed", sans-serif;
   color: $main-text-color;
   font-size: 1.6rem;
@@ -110,6 +115,18 @@ $s-desktop-width: styles.$s-desktop-width;
   &--active:hover {
     cursor: default;
     color: $main-text-color;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    margin-left: 1rem;
+    // left: 0;
+    top: 50%;
+    margin-top: -0.1rem;
+    background: $main-text-color;
   }
 }
 
@@ -156,15 +173,16 @@ $s-desktop-width: styles.$s-desktop-width;
   .header__nav-item {
     // outline: 1px yellow solid;
     margin: 0;
-    margin-right: 4rem;
-    padding: 0;
-    padding-top: 3.6rem;
-    padding-bottom: 3.6rem;
+    padding: 3.6rem 2rem;
 
     font-size: 1.4rem;
     border-bottom: 0.3rem solid rgba($color: $main-text-color, $alpha: 0);
 
     transition: all 0.5s;
+
+    &--active::after {
+      display: none;
+    }
 
     &:hover {
       border-bottom: 0.3rem solid rgba($color: $main-text-color, $alpha: 0.5);
@@ -205,16 +223,16 @@ $s-desktop-width: styles.$s-desktop-width;
 
   .header__nav-list {
     // outline: 1px blue solid;
-    padding: 0 12.3rem;
+    padding: 0 10.3rem;
   }
 
   .header__nav-item {
     // outline: 1px yellow solid;
     margin: 0;
-    margin-right: 4.8rem;
-    padding: 0;
-    padding-top: 3.8rem;
-    padding-bottom: 3.8rem;
+    // margin-right: 4.8rem;
+    padding: 3.8rem 2.4rem;
+    // padding-top: 3.8rem;
+    // padding-bottom: 3.8rem;
 
     font-size: 1.6rem;
     border-bottom: 0.3rem solid rgba($color: $main-text-color, $alpha: 0);
