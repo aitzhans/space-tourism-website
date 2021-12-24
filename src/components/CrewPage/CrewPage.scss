@@ -204,3 +204,67 @@ $l-delktop-width: styles.$l-desktop-width;
     }
   }
 }
+
+@media #{$tablet-width} {
+  .crew__container {
+    margin-top: -17.6rem;
+    padding: 16.5rem;
+    padding-top: 18rem;
+    padding-bottom: 0;
+
+    background: url("./background-crew-desktop.jpg");
+    background-position: top left;
+    background-size: cover;
+
+    align-items: flex-start;
+    // position: relative;
+    // outline: 1px blue solid;
+  }
+
+  .crew__text-container {
+    padding: 0;
+    width: 40%;
+    // outline: 1px white solid;
+  }
+
+  .crew__position {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  .crew__name {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  .crew__text {
+    margin: 0;
+    margin-bottom: 4rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  .crew__img-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 75vh;
+    // outline: 1px white solid;
+  }
+
+  .crew__img {
+    margin: 0;
+  }
+}
+
+@media #{$l-delktop-width} {
+  .crew__container {
+    padding: 25rem;
+    padding-top: 18rem;
+    padding-bottom: 0;
+  }
+}

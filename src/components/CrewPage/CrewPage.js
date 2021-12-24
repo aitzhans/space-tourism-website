@@ -9,18 +9,20 @@ import anoushen from "./image-anousheh-ansari.webp";
 
 const CrewPage = () => {
   const handleCrewClick = (e) => {
-    const menuItems = document.querySelectorAll(".crew__item");
-    menuItems.forEach((item) => item.classList.remove("crew__item--active"));
-    e.target.classList.add("crew__item--active");
+    if (e.target.tagName !== "UL") {
+      const menuItems = document.querySelectorAll(".crew__item");
+      menuItems.forEach((item) => item.classList.remove("crew__item--active"));
+      e.target.classList.add("crew__item--active");
 
-    const allImgs = document.querySelectorAll(".crew__img");
-    allImgs.forEach((item) => {
-      if (item.dataset.label === e.target.dataset.label) {
-        item.classList.add("crew__img--visible");
-      } else {
-        item.classList.remove("crew__img--visible");
-      }
-    });
+      const allImgs = document.querySelectorAll(".crew__img");
+      allImgs.forEach((item) => {
+        if (item.dataset.label === e.target.dataset.label) {
+          item.classList.add("crew__img--visible");
+        } else {
+          item.classList.remove("crew__img--visible");
+        }
+      });
+    }
   };
 
   return (
