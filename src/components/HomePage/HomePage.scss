@@ -5,9 +5,13 @@ $main-text-color: styles.$main-text-color;
 $secondary-text-color: styles.$secondary-text-color;
 $dark-color: styles.$dark-color;
 $mobile-width: styles.$mobile-width;
+$tablet-width: styles.$tablet-width;
+$s-desktop-width: styles.$s-desktop-width;
+$l-delktop-width: styles.$l-desktop-width;
 
 .main__container {
   width: 100%;
+  overflow: hidden;
   min-height: 100vh;
   margin-top: -8.8rem;
 
@@ -27,11 +31,13 @@ $mobile-width: styles.$mobile-width;
 }
 
 .main__subheader {
+  text-align: center;
   margin: 0;
   margin-bottom: 1.6rem;
   // outline: 1px yellow solid;
 }
 .main__header {
+  text-align: center;
   margin: 0;
   margin-bottom: 1.6rem;
   // outline: 1px lightblue solid;
@@ -45,6 +51,7 @@ $mobile-width: styles.$mobile-width;
 }
 
 .main__btn {
+  cursor: pointer;
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
@@ -105,5 +112,73 @@ $mobile-width: styles.$mobile-width;
     font-size: 3.2rem;
     line-height: 24rem;
     // outline: 1px yellow solid;
+  }
+}
+
+@media #{$tablet-width} {
+  .main__container {
+    margin-top: -18rem;
+    min-height: 100vh;
+
+    padding: 16.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: flex-end;
+
+    // background: blue;
+    background: url("./background-home-desktop.jpg");
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .main__subheader {
+    text-align: left;
+    padding-top: 25rem;
+    margin-bottom: 2.4rem;
+  }
+  .main__header {
+    text-align: left;
+    margin-left: -1rem;
+    margin-bottom: 2.4rem;
+    // outline: 1px lightblue solid;
+  }
+
+  .main__text {
+    text-align: left;
+    width: 45rem;
+    margin-bottom: 0;
+    // outline: 1px yellow solid;
+  }
+
+  .main__btn {
+    margin-top: 34rem;
+    height: 27.4rem;
+    width: 27.4rem;
+
+    font-size: 3.2rem;
+    line-height: 27.4rem;
+    // outline: 1px yellow solid;
+
+    &:hover,
+    &:active {
+      outline: 9.5rem solid rgba($color: $dark-color, $alpha: 0.4);
+    }
+  }
+}
+
+@media #{$l-delktop-width} {
+  .main__container {
+    padding: 0 40rem;
+  }
+
+  .main__subheader {
+    padding-top: 15rem;
+  }
+
+  .main__btn {
+    margin-top: 24rem;
   }
 }
