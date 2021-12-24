@@ -25,7 +25,7 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
