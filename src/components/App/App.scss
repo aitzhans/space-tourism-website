@@ -1,4 +1,5 @@
-body {
-  background-color: tomato;
-  font-family: "Bellefair", serif;
-}
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;

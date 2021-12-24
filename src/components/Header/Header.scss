@@ -1,0 +1,105 @@
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2.4rem;
+}
+
+.header__logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.header__toggle-btn {
+  z-index: 1;
+}
+
+.header__toggle-inner {
+  position: relative;
+  width: 2.4rem;
+  height: 2.1rem;
+  // outline: 1px aqua solid;
+
+  & > span {
+    transition: transform 0.3s;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+
+    width: 2.4rem;
+    height: 0.3rem;
+    background: $secondary-text-color;
+
+    &:nth-child(2) {
+      top: 50%;
+      margin-top: -0.15rem;
+    }
+
+    &:last-child {
+      top: 100%;
+      margin-top: -0.3rem;
+    }
+  }
+
+  &--close > span {
+    transform: translateY(0.9rem) translateX(0.1rem) rotate(45deg);
+
+    &:nth-child(2) {
+      transform: translateY(0) translateX(5rem) rotate(0);
+      opacity: 0;
+    }
+
+    &:last-child {
+      transform: translateY(-0.9rem) translateX(0.1rem) rotate(-45deg);
+    }
+  }
+}
+
+.header__nav {
+  position: absolute;
+  width: 254px;
+  height: 100vh;
+  left: 12rem;
+  top: 0;
+  padding-top: 10rem;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  background-color: $bg-color;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+
+  &--close {
+    transform: translateX(0);
+  }
+}
+
+.header__nav-list {
+  // outline: 1px yellow solid;
+}
+
+.header__nav-item {
+  // outline: 1px yellow solid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3.2rem;
+
+  font-family: "Barlow Condensed", sans-serif;
+  color: $main-text-color;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 2.7px;
+}
+.header__nav-number {
+  font-weight: 600;
+  margin-right: 1.4rem;
+}
