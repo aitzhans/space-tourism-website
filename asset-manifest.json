@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/space-tourism-website/static/css/main.fc7934fb.css",
-    "main.js": "/space-tourism-website/static/js/main.94839eab.js",
+    "main.js": "/space-tourism-website/static/js/main.53c3f33d.js",
     "static/media/background-destination-tablet.jpg": "/space-tourism-website/static/media/background-destination-tablet.a9fd8888d3a5eca0fe2c.jpg",
     "static/media/image-spaceport-landscape.jpg": "/space-tourism-website/static/media/image-spaceport-landscape.34a28d3c1471d0647e4b.jpg",
     "static/media/background-home-tablet.jpg": "/space-tourism-website/static/media/background-home-tablet.ca849b3d026c94b90628.jpg",
@@ -29,10 +29,10 @@
     "index.html": "/space-tourism-website/index.html",
     "static/media/logo.svg": "/space-tourism-website/static/media/logo.3f9403a774b726b2ec9a245b20c59373.svg",
     "main.fc7934fb.css.map": "/space-tourism-website/static/css/main.fc7934fb.css.map",
-    "main.94839eab.js.map": "/space-tourism-website/static/js/main.94839eab.js.map"
+    "main.53c3f33d.js.map": "/space-tourism-website/static/js/main.53c3f33d.js.map"
   },
   "entrypoints": [
     "static/css/main.fc7934fb.css",
-    "static/js/main.94839eab.js"
+    "static/js/main.53c3f33d.js"
   ]
 }
