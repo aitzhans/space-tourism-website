@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./HomePage.scss";
 
@@ -15,7 +16,9 @@ const HomePage = () => {
           experience!
         </p>
       </div>
-      <button className="main__btn">EXPLORE</button>
+      <Link to="/destination" className="main__btn">
+        EXPLORE
+      </Link>
     </main>
   );
 };

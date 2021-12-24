@@ -28,41 +28,50 @@ const DestinationPage = () => {
       <h5 className="dest__subheader">
         <span className="dest__subheader--num">01</span>Pick your destination
       </h5>
-      <div className="dest__img-container ">
-        <img
-          className="dest__img  dest__img--visible"
-          src={moon}
-          alt="Moon"
-          aria-label="moon"
-        />
-        <img className="dest__img" src={mars} alt="Mars" aria-label="mars" />
-        <img
-          className="dest__img"
-          src={europa}
-          alt="Europa"
-          aria-label="europa"
-        />
-        <img className="dest__img" src={titan} alt="Titan" aria-label="titan" />
+      <div className="dest__main">
+        <div className="dest__img-container ">
+          <img
+            className="dest__img  dest__img--visible"
+            src={moon}
+            alt="Moon"
+            aria-label="moon"
+          />
+          <img className="dest__img" src={mars} alt="Mars" aria-label="mars" />
+          <img
+            className="dest__img"
+            src={europa}
+            alt="Europa"
+            aria-label="europa"
+          />
+          <img
+            className="dest__img"
+            src={titan}
+            alt="Titan"
+            aria-label="titan"
+          />
+        </div>
+        <div className="dest__left">
+          <ul className="dest__list" onClick={handleDestinationsClick}>
+            <Link
+              to="moon"
+              className="dest__item  dest__item--active"
+              aria-label="moon"
+            >
+              Moon
+            </Link>
+            <Link to="mars" className="dest__item" aria-label="mars">
+              Mars
+            </Link>
+            <Link to="europa" className="dest__item" aria-label="europa">
+              Europa
+            </Link>
+            <Link to="titan" className="dest__item" aria-label="titan">
+              Titan
+            </Link>
+          </ul>
+          <Outlet />
+        </div>
       </div>
-      <ul className="dest__list" onClick={handleDestinationsClick}>
-        <Link
-          to="moon"
-          className="dest__item  dest__item--active"
-          aria-label="moon"
-        >
-          Moon
-        </Link>
-        <Link to="mars" className="dest__item" aria-label="mars">
-          Mars
-        </Link>
-        <Link to="europa" className="dest__item" aria-label="europa">
-          Europa
-        </Link>
-        <Link to="titan" className="dest__item" aria-label="titan">
-          Titan
-        </Link>
-      </ul>
-      <Outlet />
     </main>
   );
 };

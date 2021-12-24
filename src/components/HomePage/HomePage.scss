@@ -63,6 +63,8 @@ $l-delktop-width: styles.$l-desktop-width;
   font-size: 2rem;
   line-height: 15rem;
   font-weight: 400;
+  text-decoration: none;
+  text-align: center;
 
   outline: 0.1rem solid rgba($color: $dark-color, $alpha: 0);
   transition: outline 0.3s;
@@ -159,7 +161,7 @@ $l-delktop-width: styles.$l-desktop-width;
     width: 27.4rem;
 
     font-size: 3.2rem;
-    line-height: 27.4rem;
+    line-height: 29rem;
     // outline: 1px yellow solid;
 
     &:hover,

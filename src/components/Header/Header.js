@@ -24,9 +24,9 @@ const Header = () => {
 
   return (
     <header className="header__container">
-      <div className="header__logo">
+      <Link to="/" className="header__logo">
         <img src={logo} width="40" height="40" alt="logo" />
-      </div>
+      </Link>
       <div className="header__toggle-btn">
         <div
           ref={toggleRef}

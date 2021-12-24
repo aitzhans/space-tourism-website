@@ -10,13 +10,15 @@ const DestinationMars = () => {
         two and a half times the size of Everest!
       </p>
 
-      <div className="dest__numbers">
-        <h6 className="dest__numbers-title">AVG. DISTANCE</h6>
-        <p className="dest__numbers-val">225 MIL. km</p>
-      </div>
-      <div className="dest__numbers">
-        <h6 className="dest__numbers-title">Est. travel time</h6>
-        <p className="dest__numbers-val">9 months</p>
+      <div className="dest__numbers-container">
+        <div className="dest__numbers">
+          <h6 className="dest__numbers-title">AVG. DISTANCE</h6>
+          <p className="dest__numbers-val">225 MIL. km</p>
+        </div>
+        <div className="dest__numbers">
+          <h6 className="dest__numbers-title">Est. travel time</h6>
+          <p className="dest__numbers-val">9 months</p>
+        </div>
       </div>
     </>
   );
