@@ -18,6 +18,9 @@ import CrewViktor from "../CrewPage/CrewViktor";
 import CrewAnoushen from "../CrewPage/CrewAnoushen";
 
 import "./App.scss";
+import TechCapsule from "../TechPage/TechCapsule";
+import TechLaunch from "../TechPage/TechLaunch";
+import TechSpaceport from "../TechPage/TechSpaceport";
 
 const App = () => {
   return (
@@ -39,7 +42,12 @@ const App = () => {
           <Route path="viktor" element={<CrewViktor />} />
           <Route path="anoushen" element={<CrewAnoushen />} />
         </Route>
-        <Route path="/technology" element={<TechPage />} />
+        <Route path="/technology" element={<TechPage />}>
+          <Route path="" element={<Navigate to="launch" />} />
+          <Route path="launch" element={<TechLaunch />} />
+          <Route path="capsule" element={<TechCapsule />} />
+          <Route path="spaceport" element={<TechSpaceport />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,139 @@
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;
+$dark-color: styles.$dark-color;
+$divider-color: styles.$divider-color;
+$mobile-width: styles.$mobile-width;
+$tablet-width: styles.$tablet-width;
+$s-desktop-width: styles.$s-desktop-width;
+$l-delktop-width: styles.$l-desktop-width;
+
+.tech__container {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-top: -8.8rem;
+
+  padding: 0;
+  padding-top: 6rem;
+
+  background: url("./background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+
+  // outline: 1px white solid;
+}
+
+.tech__img-container {
+  width: 100%;
+  margin-bottom: 3.4rem;
+  // outline: 1px white solid;
+}
+
+.tech__img {
+  width: 100%;
+  height: auto;
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+  // outline: 1px red solid;
+}
+
+.tech__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 3.2rem;
+  // outline: 1px white solid;
+}
+
+.tech__item {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  color: $main-text-color;
+  background-color: $bg-color;
+  border: 1px rgba($color: $main-text-color, $alpha: 0.4) solid;
+  border-radius: 50%;
+  margin-right: 2.2rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 1px rgba($color: $main-text-color, $alpha: 1) solid;
+  }
+
+  &--active {
+    background: $main-text-color;
+    color: $bg-color;
+    border: 0;
+
+    &:hover {
+      border: 0;
+    }
+  }
+}
+
+.tech__text-container {
+  margin: 0;
+  padding: 0 2.4rem;
+  // outline: 1px red solid;
+}
+
+.tech__term {
+  font-family: "Barlow Condensed", sans-serif;
+  color: $secondary-text-color;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  // outline: 1px white solid;
+}
+.tech__name {
+  font-family: "Bellefair", serif;
+  color: $main-text-color;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  // outline: 1px white solid;
+}
+
+.tech__text {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+  // outline: 1px white solid;
+}
+
+@media #{$mobile-width} {
+}
+
+@media #{$tablet-width} {
+}
+
+@media #{$l-delktop-width} {
+}
