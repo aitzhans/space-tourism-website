@@ -21,6 +21,7 @@ import "./App.scss";
 import TechCapsule from "../TechPage/TechCapsule";
 import TechLaunch from "../TechPage/TechLaunch";
 import TechSpaceport from "../TechPage/TechSpaceport";
+import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="capsule" element={<TechCapsule />} />
           <Route path="spaceport" element={<TechSpaceport />} />
         </Route>
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </HashRouter>
   );

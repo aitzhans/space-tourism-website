@@ -1,0 +1,152 @@
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;
+$dark-color: styles.$dark-color;
+$mobile-width: styles.$mobile-width;
+$tablet-width: styles.$tablet-width;
+$s-desktop-width: styles.$s-desktop-width;
+$l-delktop-width: styles.$l-desktop-width;
+
+.not-found__container {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-top: -8.8rem;
+
+  padding: 2.4rem;
+  padding-top: 11.2rem;
+
+  background: url("./background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  // outline: 1px pink solid;
+}
+
+.not-found__header {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1.6rem;
+  // outline: 1px lightblue solid;
+}
+
+.not-found__btn {
+  cursor: pointer;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: $main-text-color;
+
+  font-family: "Bellefair", serif;
+  color: $bg-color;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 15rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+
+  outline: 0.1rem solid rgba($color: $dark-color, $alpha: 0);
+  transition: outline 0.3s;
+
+  &:hover,
+  &:active {
+    outline: 4.5rem solid rgba($color: $dark-color, $alpha: 0.4);
+  }
+}
+
+@media #{$mobile-width} {
+  .not-found__container {
+    margin-top: -14.5rem;
+    min-height: 100vh;
+
+    padding: 10rem;
+    padding-top: 24rem;
+    padding-bottom: 0;
+
+    background: url("./background-home-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: auto;
+    background-position: center bottom;
+    // outline: 1px lightblue solid;
+  }
+
+  .not-found__header {
+    margin-bottom: 2.4rem;
+    // outline: 1px lightblue solid;
+  }
+
+  .not-found__btn {
+    flex-shrink: 0;
+    height: 24rem;
+    width: 24rem;
+
+    font-size: 2.6rem;
+    line-height: 24rem;
+    // outline: 1px yellow solid;
+  }
+}
+
+@media #{$tablet-width} {
+  .not-found__container {
+    margin-top: -18rem;
+    min-height: 100vh;
+
+    padding: 20%;
+    padding-top: 0rem;
+    padding-bottom: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: flex-end;
+
+    // background: blue;
+    background: url("./background-home-desktop.jpg");
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  .not-found__header {
+    text-align: left;
+    margin-left: -1rem;
+    margin-bottom: 2.4rem;
+    // outline: 1px lightblue solid;
+  }
+
+  .not-found__btn {
+    // margin-top: 34rem;
+    height: 27.4rem;
+    width: 27.4rem;
+
+    font-size: 3.2rem;
+    line-height: 29rem;
+    // outline: 1px yellow solid;
+
+    &:hover,
+    &:active {
+      outline: 9.5rem solid rgba($color: $dark-color, $alpha: 0.4);
+    }
+  }
+}
+
+@media #{$l-delktop-width} {
+  .not-found__container {
+    padding: 0 40rem;
+  }
+
+  .not-found__subheader {
+    padding-top: 15rem;
+  }
+
+  .not-found__btn {
+    margin-top: 24rem;
+  }
+}
