@@ -2,7 +2,7 @@ import React from "react";
 
 const CrewDouglas = () => {
   return (
-    <div className="crew__textContainer">
+    <div className="crew__text-container">
       <p className="crew__position">Commander</p>
       <p className="crew__name">Douglas Hurley</p>
       <p className="crew__text">

@@ -2,7 +2,7 @@ import React from "react";
 
 const CrewViktor = () => {
   return (
-    <>
+    <div className="crew__text-container">
       <p className="crew__position">PILOT</p>
       <p className="crew__name">Victor Glover</p>
       <p className="crew__text">
@@ -11,7 +11,7 @@ const CrewViktor = () => {
         where he pilots an F/A-18.He was a crew member of Expedition 64, and
         served as a station systems flight engineer.
       </p>
-    </>
+    </div>
   );
 };
 

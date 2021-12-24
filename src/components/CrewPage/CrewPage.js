@@ -28,53 +28,51 @@ const CrewPage = () => {
       <h5 className="inner__subheader">
         <span className="inner__subheader--num">02</span>Meet your crew
       </h5>
-      <div className="crew__main">
-        <div className="crew__img-container ">
-          <img
-            className="crew__img  crew__img--visible"
-            src={douglas}
-            alt="Douglas Hurley"
-            data-label="douglas"
-          />
-          <img
-            className="crew__img"
-            src={mark}
-            alt="Mark Shuttleworth"
-            data-label="mark"
-          />
-          <img
-            className="crew__img"
-            src={viktor}
-            alt="Victor Glover"
-            data-label="viktor"
-          />
-          <img
-            className="crew__img"
-            src={anoushen}
-            alt="Anousheh Ansari"
-            data-label="anoushen"
-          />
-        </div>
-        <ul className="crew__list" onClick={handleCrewClick}>
-          <Link
-            to="douglas"
-            className="crew__item  crew__item--active"
-            data-label="douglas"
-          >
-            Douglas
-          </Link>
-          <Link to="mark" className="crew__item" data-label="mark">
-            Mark
-          </Link>
-          <Link to="viktor" className="crew__item" data-label="viktor">
-            Viktor
-          </Link>
-          <Link to="anoushen" className="crew__item" data-label="anoushen">
-            Anoushen
-          </Link>
-        </ul>
-        <Outlet />
+      <div className="crew__img-container ">
+        <img
+          className="crew__img  crew__img--visible"
+          src={douglas}
+          alt="Douglas Hurley"
+          data-label="douglas"
+        />
+        <img
+          className="crew__img"
+          src={mark}
+          alt="Mark Shuttleworth"
+          data-label="mark"
+        />
+        <img
+          className="crew__img"
+          src={viktor}
+          alt="Victor Glover"
+          data-label="viktor"
+        />
+        <img
+          className="crew__img"
+          src={anoushen}
+          alt="Anousheh Ansari"
+          data-label="anoushen"
+        />
       </div>
+      <ul className="crew__list" onClick={handleCrewClick}>
+        <Link
+          to="douglas"
+          className="crew__item  crew__item--active"
+          data-label="douglas"
+        >
+          Douglas
+        </Link>
+        <Link to="mark" className="crew__item" data-label="mark">
+          Mark
+        </Link>
+        <Link to="viktor" className="crew__item" data-label="viktor">
+          Viktor
+        </Link>
+        <Link to="anoushen" className="crew__item" data-label="anoushen">
+          Anoushen
+        </Link>
+      </ul>
+      <Outlet />
     </main>
   );
 };

@@ -45,14 +45,14 @@ $l-delktop-width: styles.$l-desktop-width;
   }
 }
 
-.crew__main {
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .crew__main {
+//   margin: 0;
+//   width: 100%;
+//   padding: 0;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 .crew__img-container {
   width: 32.7rem;
@@ -107,7 +107,7 @@ $l-delktop-width: styles.$l-desktop-width;
   // }
 }
 
-.crew__textContainer {
+.crew__text-container {
   margin: 0;
   padding: 0;
 }
@@ -142,4 +142,65 @@ $l-delktop-width: styles.$l-desktop-width;
   text-align: center;
   padding-bottom: 1rem;
   // outline: 1px white solid;
+}
+
+@media #{$mobile-width} {
+  .crew__container {
+    margin-top: -14.1rem;
+    padding: 3.85rem;
+    padding-top: 14rem;
+    padding-bottom: 0;
+
+    background: url("./background-crew-tablet.jpg");
+    background-position: top left;
+    background-size: cover;
+    // outline: 1px white solid;
+  }
+
+  .crew__list {
+    order: 2;
+    // outline: 1px white solid;
+  }
+
+  .crew__text-container {
+    order: 1;
+    margin: 0;
+    min-height: 23rem;
+    padding: 0 5rem;
+    // outline: 1px white solid;
+  }
+
+  .crew__position {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  .crew__name {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  .crew__text {
+    margin: 0;
+    margin-bottom: 4rem;
+    padding: 0;
+  }
+
+  .crew__img-container {
+    order: 3;
+    flex-grow: 1;
+    width: 90%;
+    overflow-y: hidden;
+    // outline: 1px white solid;
+  }
+
+  .crew__img {
+    margin-top: 3rem;
+    min-height: 100%;
+
+    // outline: 1px red solid;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }

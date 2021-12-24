@@ -2,7 +2,7 @@ import React from "react";
 
 const CrewAnoushen = () => {
   return (
-    <>
+    <div className="crew__text-container">
       <p className="crew__position">Flight Engineer</p>
       <p className="crew__name">Anousheh Ansari</p>
       <p className="crew__text">
@@ -10,7 +10,7 @@ const CrewAnoushen = () => {
         Systems. Ansari was the fourth self-funded space tourist, the first
         self-funded woman to fly to the ISS, and the first Iranian in space.
       </p>
-    </>
+    </div>
   );
 };
 
