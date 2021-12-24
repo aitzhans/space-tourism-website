@@ -40,6 +40,7 @@ body {
   min-height: 100vh;
   font-size: 1.4rem; /* =14px */
   background-color: $bg-color;
+  color: $main-text-color;
 }
 
 img {
@@ -98,6 +99,7 @@ h2 {
 
 h3 {
   font-family: "Bellefair", serif;
+  text-transform: uppercase;
   color: $main-text-color;
   font-size: 5.6rem;
   font-weight: 400;
