@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { handleMenuItems } from "../utils";
 import "./HomePage.scss";
 
 const HomePage = () => {
@@ -16,7 +17,11 @@ const HomePage = () => {
           experience!
         </p>
       </div>
-      <Link to="/destination" className="main__btn">
+      <Link
+        to="/destination"
+        className="main__btn"
+        onMouseDown={() => handleMenuItems("destination")}
+      >
         EXPLORE
       </Link>
     </main>

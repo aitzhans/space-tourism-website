@@ -12,6 +12,11 @@ import DestinationMars from "../DestinataionPage/DestinationMars";
 import DestinationEuropa from "../DestinataionPage/DestinationEuropa";
 import DestinationTitan from "../DestinataionPage/DestinationTitan";
 
+import CrewDouglas from "../CrewPage/CrewDouglas";
+import CrewMark from "../CrewPage/CrewMark";
+import CrewViktor from "../CrewPage/CrewViktor";
+import CrewAnoushen from "../CrewPage/CrewAnoushen";
+
 import "./App.scss";
 
 const App = () => {
@@ -27,7 +32,13 @@ const App = () => {
           <Route path="europa" element={<DestinationEuropa />} />
           <Route path="titan" element={<DestinationTitan />} />
         </Route>
-        <Route path="/crew" element={<CrewPage />} />
+        <Route path="/crew" element={<CrewPage />}>
+          <Route path="" element={<Navigate to="douglas" />} />
+          <Route path="douglas" element={<CrewDouglas />} />
+          <Route path="mark" element={<CrewMark />} />
+          <Route path="viktor" element={<CrewViktor />} />
+          <Route path="anoushen" element={<CrewAnoushen />} />
+        </Route>
         <Route path="/technology" element={<TechPage />} />
       </Routes>
     </BrowserRouter>

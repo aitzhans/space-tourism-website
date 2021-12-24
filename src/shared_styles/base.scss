@@ -162,3 +162,21 @@ h5 {
     font-size: 1.4rem;
   }
 }
+
+.inner__subheader {
+  // outline: 1px white solid;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  margin-bottom: 3.2rem;
+
+  &--num {
+    opacity: 0.5;
+    margin-right: 1.8rem;
+  }
+  @media #{$mobile-width} {
+    align-self: flex-start;
+    margin-bottom: 6rem;
+  }
+}

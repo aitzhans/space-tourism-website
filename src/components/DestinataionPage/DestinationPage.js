@@ -15,7 +15,7 @@ const DestinationPage = () => {
 
     const allImgs = document.querySelectorAll(".dest__img");
     allImgs.forEach((item) => {
-      if (item.ariaLabel === e.target.ariaLabel) {
+      if (item.dataset.label === e.target.dataset.label) {
         item.classList.add("dest__img--visible");
       } else {
         item.classList.remove("dest__img--visible");
@@ -25,8 +25,8 @@ const DestinationPage = () => {
 
   return (
     <main className="dest__container">
-      <h5 className="dest__subheader">
-        <span className="dest__subheader--num">01</span>Pick your destination
+      <h5 className="inner__subheader">
+        <span className="inner__subheader--num">01</span>Pick your destination
       </h5>
       <div className="dest__main">
         <div className="dest__img-container ">
@@ -34,20 +34,20 @@ const DestinationPage = () => {
             className="dest__img  dest__img--visible"
             src={moon}
             alt="Moon"
-            aria-label="moon"
+            data-label="moon"
           />
-          <img className="dest__img" src={mars} alt="Mars" aria-label="mars" />
+          <img className="dest__img" src={mars} alt="Mars" data-label="mars" />
           <img
             className="dest__img"
             src={europa}
             alt="Europa"
-            aria-label="europa"
+            data-label="europa"
           />
           <img
             className="dest__img"
             src={titan}
             alt="Titan"
-            aria-label="titan"
+            data-label="titan"
           />
         </div>
         <div className="dest__left">
@@ -55,17 +55,17 @@ const DestinationPage = () => {
             <Link
               to="moon"
               className="dest__item  dest__item--active"
-              aria-label="moon"
+              data-label="moon"
             >
               Moon
             </Link>
-            <Link to="mars" className="dest__item" aria-label="mars">
+            <Link to="mars" className="dest__item" data-label="mars">
               Mars
             </Link>
-            <Link to="europa" className="dest__item" aria-label="europa">
+            <Link to="europa" className="dest__item" data-label="europa">
               Europa
             </Link>
-            <Link to="titan" className="dest__item" aria-label="titan">
+            <Link to="titan" className="dest__item" data-label="titan">
               Titan
             </Link>
           </ul>

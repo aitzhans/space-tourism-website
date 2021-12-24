@@ -1,0 +1,145 @@
+@use "../../shared_styles/style.scss" as styles;
+
+$bg-color: styles.$bg-color;
+$main-text-color: styles.$main-text-color;
+$secondary-text-color: styles.$secondary-text-color;
+$dark-color: styles.$dark-color;
+$divider-color: styles.$divider-color;
+$mobile-width: styles.$mobile-width;
+$tablet-width: styles.$tablet-width;
+$s-desktop-width: styles.$s-desktop-width;
+$l-delktop-width: styles.$l-desktop-width;
+
+.crew__container {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-top: -8.8rem;
+
+  padding: 2.4rem;
+  padding-top: 6rem;
+
+  background: url("./background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+
+  // outline: 1px white solid;
+}
+
+.crew__subheader {
+  // outline: 1px white solid;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  margin-bottom: 3.2rem;
+
+  &--num {
+    opacity: 0.5;
+    margin-right: 1.8rem;
+  }
+}
+
+.crew__main {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crew__img-container {
+  width: 32.7rem;
+  height: 22.3rem;
+  // outline: 1px white solid;
+  // text-align: center;
+}
+
+.crew__img {
+  // width: 17.7rem;
+  height: 22.2rem;
+  display: none;
+  // margin-bottom: 2.6rem;
+
+  &--visible {
+    display: block;
+    margin: 0 auto;
+  }
+  // outline: 1px red solid;
+}
+
+.crew__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 3.2rem;
+  // outline: 1px white solid;
+}
+
+.crew__item {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  background: $main-text-color;
+  font-size: 0;
+  border-radius: 50%;
+  margin-right: 2.2rem;
+  opacity: 0.2;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+
+  // }
+}
+
+.crew__textContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.crew__position {
+  font-family: "Bellefair", serif;
+  color: $main-text-color;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  // outline: 1px white solid;
+}
+.crew__name {
+  font-family: "Bellefair", serif;
+  color: $main-text-color;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  // outline: 1px white solid;
+}
+
+.crew__text {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+  // outline: 1px white solid;
+}
